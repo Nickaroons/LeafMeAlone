@@ -1,7 +1,7 @@
 package com.MatrixEngine;
 
-import DataTypes.Vector2;
-import Objects.GameObject;
+import com.MatrixEngine.DataTypes.Vector2;
+import com.MatrixEngine.Objects.GameObject;
 
 import java.awt.*;
 

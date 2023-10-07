@@ -1,6 +1,6 @@
 package com.MatrixEngine;
 
-import Objects.GameObject;
+import com.MatrixEngine.Objects.GameObject;
 
 import java.awt.*;
 import java.util.LinkedList;

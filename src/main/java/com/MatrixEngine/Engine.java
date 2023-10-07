@@ -1,12 +1,11 @@
 package com.MatrixEngine;
 
-import Components.StandardLibs.Transform;
-import DataTypes.SaveData;
-import DataTypes.Vector2;
-import Input.Input;
-import Input.Mouse;
-import DataTypes.Time;
+import com.MatrixEngine.DataTypes.Vector2;
+import com.MatrixEngine.Input.Input;
+import com.MatrixEngine.Input.Mouse;
+import com.MatrixEngine.DataTypes.Time;
 import com.MatrixEngine.EngineFunctions.DataRegistry;
+import com.MatrixEngine.Networking.UserClient;
 import com.MatrixEngine.Scenes.Default;
 
 import javax.sound.sampled.AudioInputStream;
@@ -30,6 +29,7 @@ public class Engine extends Canvas implements Runnable {
     public static long currentFPS = 0;
     public static Camera camera;
     public static int tileSize = 10;
+    //public static UserClient userClient;
 
     public Engine() {
         new Window(HEIGHT, WIDTH, title, this);

@@ -9,11 +9,11 @@ By default, the "Default" scene is loaded on start.
 
 Scene Management is handled by the SceneManager class. A new scene can be loaded by calling loadScene()
 
-Objects and UIX elements will be created in the load() function of your scene.
+com.MatrixEngine.Objects and UIX elements will be created in the load() function of your scene.
 
 ----
 
-1.2 Objects
+1.2 com.MatrixEngine.Objects
 
 All objects MUST inherit the GameObject class
 

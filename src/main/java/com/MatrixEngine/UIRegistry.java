@@ -1,7 +1,7 @@
 package com.MatrixEngine;
 
-import UI.StandardLibs.DynamicUIX;
-import UI.StandardLibs.UIX;
+import com.MatrixEngine.UI.StandardLibs.DynamicUIX;
+import com.MatrixEngine.UI.StandardLibs.UIX;
 
 import java.awt.*;
 import java.util.LinkedList;
