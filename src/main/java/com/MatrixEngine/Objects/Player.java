@@ -11,6 +11,8 @@ import com.MatrixEngine.DataTypes.ID;
 import com.MatrixEngine.DataTypes.Vector2;
 import com.MatrixEngine.Camera;
 import com.MatrixEngine.Engine;
+import com.MatrixEngine.Networking.PacketTypes.PositionalPacket;
+import com.MatrixEngine.Networking.UserClient;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -53,6 +55,9 @@ public class Player extends GameObject {
                 transform.stopForce();
             }
         }
+        PositionalPacket packet = new PositionalPacket();
+        packet.position = new Vector2(transform.position.getX(), transform.position.getY());
+        UserClient.sendPacketUDP(packet);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.MatrixEngine.Scenes;
 
+import com.MatrixEngine.DataTypes.Vector2;
 import com.MatrixEngine.Networking.PacketTypes.PositionalPacket;
 import com.MatrixEngine.Networking.UserClient;
 import com.MatrixEngine.Objects.Box;
@@ -22,7 +23,7 @@ public class Default implements Scene {
         UIRegistry.add(new Text("FPS_Counter", "FPS: " + Engine.currentFPS, 10, 20, Color.BLACK));
         try {
             UserClient.connectToServer("192.168.5.44", 54555, 54777);
-            UserClient.registerData(PositionalPacket.class);
+            UserClient.registerData(Vector2.class);
         } catch (IOException e) {
             e.printStackTrace();
         }

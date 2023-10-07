@@ -12,7 +12,7 @@ public class Box extends GameObject{
 
     public Box(int x, int y) {
         super(new ID("BOX"));
-        width = 80;
+        width = 40;
         height = 40;
         transform.position = new Vector2(x, y);
         componentManager.newComponent("Sprite Renderer", new SpriteRenderer(this));
