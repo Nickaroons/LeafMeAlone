@@ -60,4 +60,12 @@ public class SpriteRenderer extends Component {
             animator.getSequenceFrame().draw(g);
         }
     }
+
+    public Sprite getSpriteFrame() {
+        if (animator == null || animator.getSequenceFrame() == null) {
+            return sprite;
+        } else {
+            return animator.getSequenceFrame();
+        }
+    }
 }

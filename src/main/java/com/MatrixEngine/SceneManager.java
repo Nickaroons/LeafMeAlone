@@ -19,5 +19,9 @@ public class SceneManager {
         return currentScene;
     }
 
-    public static void update() {currentScene.update();}
+    public static void update() {
+        if (currentScene != null) {
+            currentScene.update();
+        }
+    }
 }

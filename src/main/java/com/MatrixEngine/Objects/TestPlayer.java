@@ -17,12 +17,10 @@ import com.MatrixEngine.Networking.UserClient;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-import static com.MatrixEngine.SpriteLoader.potato;
-import static com.MatrixEngine.SpriteLoader.rock;
 
-public class Player extends GameObject {
+public class TestPlayer extends GameObject {
 
-    public Player() {
+    public TestPlayer() {
         super(new ID("player"));
         componentManager.newComponent("Sprite Renderer", new SpriteRenderer(this));
         componentManager.newComponent("RigidBody", new Rigidbody(this, 100, 0));
@@ -30,7 +28,7 @@ public class Player extends GameObject {
         componentManager.newComponent("Controller", new TopDownController(this, 200, 5));
         componentManager.newComponent("Particle System", new ParticleSystem(true, this));
         //((SpriteRenderer)componentManager.getComponent("Sprite Renderer")).setSprite(rock);
-        ((SpriteRenderer)componentManager.getComponent("Sprite Renderer")).newAnimationSequence(new AnimationSequence("idle", Animator.compileFrames(new BufferedImage[]{rock, potato}, this), 1, true, true));
+        //((SpriteRenderer)componentManager.getComponent("Sprite Renderer")).newAnimationSequence(new AnimationSequence("idle", Animator.compileFrames(new BufferedImage[]{rock, potato}, this), 1, true, true));
         //((ParticleSystem)componentManager.getComponent("Particle System")).createEmitter(new Emitter(true, this));
         ((BoxCollider)componentManager.getComponent("Box Collider")).drawBounds(false);
         ((SpriteRenderer)componentManager.getComponent("Sprite Renderer")).startAnimationSequence("idle");

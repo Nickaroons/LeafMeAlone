@@ -66,6 +66,5 @@ public class Button implements UIX {
 
     public void DEFAULTACTIONONCLICK() {
         text = "Clicked!";
-        SceneManager.loadScene(new Default());
     }
 }
